@@ -1,0 +1,7 @@
+C:\AzureCase\20181029 APIM\PutRequestTest\PutRequestTest\bin\Debug\PutRequestTest.exe.config
+C:\AzureCase\20181029 APIM\PutRequestTest\PutRequestTest\bin\Debug\PutRequestTest.exe
+C:\AzureCase\20181029 APIM\PutRequestTest\PutRequestTest\bin\Debug\PutRequestTest.pdb
+C:\AzureCase\20181029 APIM\PutRequestTest\PutRequestTest\obj\Debug\PutRequestTest.csprojAssemblyReference.cache
+C:\AzureCase\20181029 APIM\PutRequestTest\PutRequestTest\obj\Debug\PutRequestTest.csproj.CoreCompileInputs.cache
+C:\AzureCase\20181029 APIM\PutRequestTest\PutRequestTest\obj\Debug\PutRequestTest.exe
+C:\AzureCase\20181029 APIM\PutRequestTest\PutRequestTest\obj\Debug\PutRequestTest.pdb

@@ -1,0 +1,104 @@
+﻿@page
+@model AboutModel
+@{
+    ViewData["Title"] = "About";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@Model.Message</h3>
+
+<p>Use this area to provide additional information.</p>
+<buttom onclick="getapiresult();">get the api result</buttom> <br />
+<buttom onclick="getapiresultput();">get the api result -put</buttom> <br />
+<h3>Verify customer testing</h3> <br />
+<buttom onclick="getapiresultPUT1();">get the api result put 1 - ptit</buttom><br />
+<buttom onclick="getapiresultPUT2();">get the api result put 2 - ptit-cats</buttom><br />
+<h3>Verify customer testing - Get </h3> <br />
+                                        <buttom onclick="getapiresultPTIT();">get the api result Get - ptit</buttom><br />
+<script>
+
+    function getapiresult() {
+        // alert('ok');
+
+        $.ajax({
+            url: 'https://api-service-demo-01.azure-api.cn/apim/api/values',
+            headers: {
+                'Access-Control-Allow-Origin': '*',
+                'Ocp-Apim-Subscription-Key': 'e1a31d39baf242a68b285267a5e44428',
+                'Content-Type': 'application/json'
+            },
+            method: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                alert('succes: ' + data);
+            }
+        });
+    }
+
+    function getapiresultput() {
+        $.ajax({
+            url: 'https://api-service-demo-01.azure-api.cn/apim/api/values',
+            headers: {
+                'Access-Control-Allow-Origin': '*',
+                'Ocp-Apim-Subscription-Key': 'e1a31d39baf242a68b285267a5e44428',
+                'Content-Type': 'application/json'
+            },
+            method: 'PUT',
+            dataType: 'json',
+            success: function (data) {
+                alert('succes: ' + data);
+            }
+        });
+    }
+
+    function getapiresultPUT1() {
+
+        $.ajax({
+            url: 'https://ptit.azure-api.cn/crm/v1/1/labels',
+            headers: {
+                'Access-Control-Allow-Origin': '*',
+                'Ocp-Apim-Subscription-Key': '3a3d5cb1b3124a9ab0abe2c799015cd9',
+                'Content-Type': 'application/json'
+            },
+            method: 'PUT',
+            dataType: 'json',
+            success: function (data) {
+                alert('succes: ' + data);
+            }
+        });
+    }
+    function getapiresultPUT2() {
+
+        $.ajax({
+            url: 'https://ptit-cars.azure-api.cn/crm/v1/1/labels',
+            headers: {
+                'Access-Control-Allow-Origin': '*',
+                'Ocp-Apim-Subscription-Key': 'e2a9d327d2074a299616b2fd3bf36c45',
+                'Content-Type': 'application/json'
+            },
+            method: 'PUT',
+            dataType: 'json',
+            success: function (data) {
+                alert('succes: ' + data);
+            }
+        });
+    }
+
+    function getapiresultPTIT() {
+        // alert('ok');
+
+        $.ajax({
+            url: 'https://ptit.azure-api.cn/crm/v1/asdf',
+            headers: {
+                'Access-Control-Allow-Origin': '*',
+                'Ocp-Apim-Subscription-Key': 'e1a31d39baf242a68b285267a5e44428',
+                'Content-Type': 'application/json'
+            },
+            method: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                alert('succes: ' + data);
+            }
+        });
+    }
+
+</script>
